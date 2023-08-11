@@ -13,8 +13,4 @@ export class CameraVideoWeb extends WebPlugin implements CameraVideoPlugin {
   async openCamera(): Promise<{ imageUri: string }> {
       return { imageUri: 'web-camera-uri-placeholder' };
   }
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
-  }
 }
